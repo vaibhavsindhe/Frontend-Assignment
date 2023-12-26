@@ -1,0 +1,104 @@
+form{
+    width: 50%;
+    height: 85vh;
+    border: 2px solid #609cdf;
+    padding: 2rem;
+    border-radius: 10px;
+    position: relative;
+    margin: 1rem;
+}
+.formElement{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 3rem;
+}
+.input-box{
+    width: 50%;
+    height: 2rem;
+    background: #f0f7ff;
+    border: 3px solid #ddeaf9;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.element-container{
+    border: 1px solid #f0f7ff;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+h2{
+    margin:0 0 1rem 0;
+    text-align: center;
+}
+label{
+    font-weight: 500;
+}
+.radio-container{
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.radio-option{
+    width: 50%;
+    text-align: center;
+    line-height: 2rem;
+    border-radius: 5px;
+    background: #f0f7ff;
+    cursor: pointer;
+}
+.radio-option label{
+    cursor: pointer;
+}
+.selected{
+    border: 1px solid #3f15e8;
+    background: #dfecfd;
+}
+
+.switch-button{
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.toggle {
+    position : relative ;
+    display : inline-block;
+    width : 40px;
+    height : 15px;
+    background-color: #f0f7ff;
+    border-radius: 30px;
+    border: 3px solid #ddeaf9;
+    cursor: pointer;
+}
+       
+.toggle:after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid #ddeaf9;
+    top: 1px; 
+    left: 1px;
+    transition:  all 0.5s;
+}       
+.checkbox:checked + .toggle::after {
+    left : 26px; 
+}
+       
+.checkbox:checked + .toggle {
+    background-color: #006eff;
+}
+       
+.checkbox { 
+    display : none;
+}
+
+.submit{
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+}
